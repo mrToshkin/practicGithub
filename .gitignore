@@ -1,0 +1,157 @@
+# often igrnored
+node_modules/
+bower_components/
+build/
+dist/
+.idea/
+# --------OS-level helper files (cache, folder preferences)-------
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Windows Dump file
+*.stackdump
+
+# Windows Folder config file
+[Dd]esktop.ini
+
+# Windows Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# MacOs General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# MacOs Icon must end with two \r
+Icon
+
+# MacOs Thumbnails
+._*
+
+# MacOs Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# MacOs Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+#----------Visual Studio Code------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+#---------TEATCH------------
+# Logs
+*.log
+# anywhere/my.log, NOT my.logs, my.log.tmp
+
+# Compiled files. First it's JS, second python.
+*.class
+*.py[co]
+# same as: *.pyc OR *.pyo, NOT *.pyco
+
+migrate-201[5-8]*
+# anywhere/migrate-2015, migrate-20180101.db, NOT migrate-2019..
+
+*.py?
+# anywhere/*.py<any char>, *.pyc OR *.pyo OR *.pyd, NOT *.py
+
+# slash at the end means a folder
+build/
+# folder "build", NOT file "build"
+# Patterns above match anywhere in the project, not only root directory:
+# build/
+# scripts/build/
+
+#PATH-AWARE MODE.
+/build/
+# build, but NOT scripts/build
+
+# in slash mode match relative to .gitignore
+secret/key
+# secret/key, NOT docs/secret/key
+# because its switched mode with slash in startdir /dir 
+# same as /secret/key
+
+doc/*.html
+# doc/file.html, NOT somewhere/doc/file.html
+
+/*.txt
+# my.txt, NOT somwhere/my.txt
+
+# wildcard matches within a path segment
+var/www*/tmp
+# var/www/tmp
+# var/www-home/tmp
+# only root directory, because switched mode
+# NOT var/www/info/tmp anywhere/var/www/tmp
+
+# ...or replaces a path segment
+users/*/private
+# users/john/private
+# users/alice/private
+# NOT
+# users/private
+# users/john/project/private
+# script/users/john/private
+
+# double wildcard ** replaces any number of path segments
+**/*.log
+# asme as *.log
+
+**/app/cache
+# shop/app/cache
+# main/front/app/cache
+
+docs/**/*.html
+# docs/module/generated.html
+# docs/general/info/performance.html
+# NOT
+# subdir/docs/my.html
+
+# ** can only be used as **/...
+# or .../**/...
+# or .../**
+
+.*
+!.gitattributes
+!.gitignore
+
+# DOESN'T WORK
+# install/ ignores directory, making its content unknown to git
+# so we can't "unignore" anything inside it
+/install/
+!install/packages.xml
+
+# INSTEAD
+# ignore not install/, but each item of its content
+# whis way we can "unignore" it
+/install/*
+!install/packages.xml
+
+# screencast: https://www.youtube.com/watch?v=hjxFQNjpEU4&list=PLDyvV36pndZHkDRik6kKF6gSb0N0W995h&index=12

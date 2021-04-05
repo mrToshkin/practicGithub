@@ -1,0 +1,27 @@
+{
+  "name": "learnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "in1.js",
+  "scripts": {
+    "test": "mocha test",
+    "start": "node in1.js",
+    "your-custom-script": "echo npm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrToshkin/practicGithub.git"
+  },
+  "author": "mrtoshkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrToshkin/practicGithub/issues"
+  },
+  "homepage": "https://github.com/mrToshkin/practicGithub#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2"
+  }
+}
